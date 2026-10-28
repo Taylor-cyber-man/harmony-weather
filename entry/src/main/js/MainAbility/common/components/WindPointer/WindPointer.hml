@@ -1,0 +1,11 @@
+<div class="container-WindPointer">
+    <div>
+        <div class="barText">
+            <text class="text1">{{Wind}}</text>
+            <text class="text2">{{WindLevel}}</text>
+        </div>
+        <div class="bar">
+            <text class="wind-arrow">{{windArrow}}</text>
+        </div>
+    </div>
+</div>

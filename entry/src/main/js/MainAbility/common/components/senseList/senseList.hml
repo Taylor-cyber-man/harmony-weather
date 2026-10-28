@@ -1,0 +1,28 @@
+<div class="container">
+    <list divider="true">
+        <list-item clickeffect="false">
+            <div class="text">
+                <text>湿度：</text>
+                <text>{{otherData.rh}}</text>
+            </div>
+        </list-item>
+        <list-item clickeffect="false">
+            <div class="text">
+                <text>体感：</text>
+                <text>{{otherData.feel_like}}</text>
+            </div>
+        </list-item>
+        <list-item clickeffect="false">
+            <div class="text">
+                <text>紫外线：</text>
+                <text>{{otherData.uv}}</text>
+            </div>
+        </list-item>
+        <list-item clickeffect="false">
+            <div class="text">
+                <text>气压：</text>
+                <text>{{otherData.pressure}}</text>
+            </div>
+        </list-item>
+    </list>
+</div>

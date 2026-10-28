@@ -1,0 +1,15 @@
+<div class="container">
+    <list>
+            <list-item for="{{day}}" clickeffect="false">
+                <div class="item">
+                    <text>{{$item.week}}</text>
+                    <text>{{$item.text_day}}</text>
+                    <text>{{$item.high}}</text>
+                    <image src="{{$item.img}}"></image>
+                    <text>{{$item.low}}</text>
+                    <text>{{$item.wd_day}}</text>
+                    <text>{{$item.wc_day}}</text>
+                </div>
+            </list-item>
+    </list>
+</div>

@@ -1,0 +1,49 @@
+<div class="container">
+    <text class="title">{{title}}</text>
+    <div class="content">
+        <div class="outside">
+            <chart class="data-gauge" type="gauge" percent="{{percentNumber}}"></chart>
+            <div class="inside">
+                <text class="big">{{airQuality}}</text>
+                <text>{{airNumber}}</text>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="row">
+                <div class="col">
+                    <text>PM2.5</text>
+                    <text>{{PM2_5}}</text>
+                </div>
+
+                <div class="col">
+                    <text>PM10</text>
+                    <text>{{PM10}}</text>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <text>SO2</text>
+                    <text>{{SO2}}</text>
+                </div>
+
+                <div class="col">
+                    <text>NO2</text>
+                    <text>{{NO2}}</text>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <text>CO</text>
+                    <text>{{CO}}</text>
+                </div>
+
+                <div class="col">
+                    <text>O3</text>
+                    <text>{{O3}}</text>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

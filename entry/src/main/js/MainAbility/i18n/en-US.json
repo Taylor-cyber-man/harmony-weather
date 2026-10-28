@@ -1,0 +1,14 @@
+{
+  "strings": {
+    "hello": "Hello",
+    "world": "World",
+    "select_city": "Select City",
+    "search_city": "Search City",
+    "current_city": "Current City",
+    "current": "Current",
+    "saved_cities": "Saved Cities",
+    "hot_cities": "Hot Cities"
+  },
+  "Files": {
+  }
+}

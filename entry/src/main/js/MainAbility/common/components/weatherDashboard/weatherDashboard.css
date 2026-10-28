@@ -1,0 +1,12 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 5% 2% 5%;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin-right: 6%;
+}

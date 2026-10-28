@@ -1,0 +1,12 @@
+<div class="time-weather">
+    <list class="timeList" scrollbar="off">
+        <list-item for="{{time}}" clickeffect="false">
+            <div class="item">
+                <text>{{$item.data_time}}</text>
+                <image src="{{$item.img}}"></image>
+                <text>{{$item.text}}</text>
+                <text>{{$item.temp_fc}}</text>
+            </div>
+        </list-item>
+    </list>
+</div>

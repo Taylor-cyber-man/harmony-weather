@@ -1,0 +1,44 @@
+.targetWeather{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgba(225,225,225,0.5);
+    backdrop-filter: blur(4px);
+    margin: 2% 5% 0 5%;
+    height: 450px;
+}
+
+.title{
+    font-size: 38px;
+    text-align: left;
+    width: 100%;
+    height: 10%;
+    margin: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+
+.gr{
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    width: 100%;
+}
+
+.gr>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+}
+
+image{
+    width: 60px;
+    height: 60px;
+}

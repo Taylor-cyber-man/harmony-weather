@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="header">
+        <div class="back-btn" onclick="closePage">
+            <text class="back-text">←</text>
+        </div>
+        <text class="header-title">{{$t('strings.select_city')}}</text>
+        <div class="close-btn" onclick="closePage">
+            <text class="close-text">✕</text>
+        </div>
+    </div>
+    
+    <div class="search-box">
+        <input type="text" placeholder="{{$t('strings.search_city')}}" class="search-input" 
+               onchange="handleSearch" value="{{searchText}}"/>
+    </div>
+    
+    <list class="content-scroll" scrollbar="on">
+        <list-item class="section-item" if="{{currentCity}}">
+            <div class="current-city-section">
+                <text class="section-title">{{$t('strings.current_city')}}</text>
+                <div class="city-item-current" onclick="selectCity({{currentCity}})">
+                    <text class="city-name">{{currentCity}}</text>
+                    <text class="current-tag">{{$t('strings.current')}}</text>
+                </div>
+            </div>
+        </list-item>
+        
+        <list-item class="section-item" if="{{savedCities.length > 0}}">
+            <div class="saved-cities-section">
+                <text class="section-title">{{$t('strings.saved_cities')}}</text>
+                <div for="{{city in savedCities}}" class="saved-city-wrapper">
+                    <div class="city-item">
+                        <text class="city-name" onclick="selectCity({{city}})">{{city}}</text>
+                        <div class="delete-btn" onclick="deleteCity({{city}})">
+                            <text class="delete-text">✕</text>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </list-item>
+        
+        <list-item class="section-item">
+            <div class="hot-cities-section">
+                <text class="section-title">{{$t('strings.hot_cities')}}</text>
+                <div class="hot-cities-grid">
+                    <div for="{{city in hotCities}}" class="hot-city-item" onclick="selectCity({{city}})">
+                        <text class="hot-city-text">{{city}}</text>
+                    </div>
+                </div>
+            </div>
+        </list-item>
+    </list>
+</div>

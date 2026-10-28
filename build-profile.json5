@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "0000001A3945247683F79E7AE0F168EB8B8A00FF54CEFD9119E69DDAAD8B3F988C1BE9E046834F6A83CD",
+          "certpath": "D:/电脑电子说明书和保修卡/zhengshu/xiaohonghc.cer",
+          "keyAlias": "hecheng",
+          "keyPassword": "0000001AA020419D9DD39A54DB0C1997512DD6A3569F9D5D6D4959FD337DDD26084C13C16CDEF9043F3E",
+          "profile": "D:/电脑电子说明书和保修卡/zhengshu/xiaohonghcRelease.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "D:/电脑电子说明书和保修卡/zhengshu/xiaohonghc.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

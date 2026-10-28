@@ -1,0 +1,106 @@
+           {
+  "app": {
+    "vendor": "example",
+    "bundleName": "hc.xioahongtianqi.com",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "mainAbility": ".MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet"
+    ],
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "srcPath": "MainAbility",
+        "name": ".MainAbility",
+        "srcLanguage": "js",
+        "icon": "$media:icon",
+        "description": "$string:MainAbility_desc",
+        "formsEnabled": false,
+        "label": "$string:MainAbility_label",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": ".FormAbility",
+        "srcPath": "FormAbility",
+        "description": "$string:FormAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:FormAbility_label",
+        "type": "service",
+        "formsEnabled": true,
+        "srcLanguage": "js",
+        "forms": [
+          {
+            "jsComponentName": "widget",
+            "isDefault": true,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*4",
+            "name": "widget",
+            "description": "This is a service widget.",
+            "colorMode": "auto",
+            "type": "JS",
+            "formVisibleNotify": true,
+            "supportDimensions": [
+              "2*2",
+              "2*4",
+              "4*4"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          }
+        ]
+      }
+    ],
+    "distro": {
+      "moduleType": "entry",
+      "installationFree": false,
+      "deliveryWithInstall": true,
+      "moduleName": "entry"
+    },
+    "package": "com.example.myapplication",
+    "name": ".entry",
+    "js": [
+      {
+        "pages": [
+          "pages/loading/loading",
+          "pages/weather/weather",
+          "pages/citySelector/citySelector"
+        ],
+        "name": ".MainAbility",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      },
+      {
+        "name": "widget",
+        "pages": [
+          "pages/index/index"
+        ],
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": true
+        },
+        "type": "form"
+      }
+    ]
+  }
+}

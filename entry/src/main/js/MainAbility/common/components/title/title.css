@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100px;
+
+}
+
+.add{
+    top: 25px;
+    left: 10px;
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.add-text {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.add:active {
+    opacity: 0.5;
+}
+.title{
+    margin-top: 12px;
+    position: absolute;
+    font-size: 38px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    line-height: 70px;
+
+}

@@ -1,0 +1,11 @@
+<element name="WindPointer" src="../../components/WindPointer/WindPointer.hml"></element>
+<element name="rainCount" src="../../components/rainCounter/rainCounter.hml"></element>
+<element name="feel" src="../../components/senseList/senseList.hml"></element>
+
+<div class="row">
+    <div class="col">
+        <windpointer weather-data="{{weatherData}}"></windpointer>
+        <raincount weather-data="{{weatherData}}"></raincount>
+    </div>
+    <feel weather-data="{{weatherData}}"></feel>
+</div>

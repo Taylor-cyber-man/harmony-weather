@@ -1,0 +1,34 @@
+<div class="widget-container" onclick="routerEvent">
+    <div class="weather-card">
+        <div class="header">
+            <text class="city-name">{{cityName}}</text>
+            <text class="update-time">{{updateTime}}</text>
+        </div>
+        
+        <div class="main-weather">
+            <div class="temp-container">
+                <text class="temperature">{{temperature}}°</text>
+<!--                <text class="degree">°</text>-->
+            </div>
+            <div class="weather-info">
+                <text class="weather-text">{{weatherText}}</text>
+                <text class="temp-range">{{tempHigh}}°/{{tempLow}}°</text>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="info-item">
+                <text class="info-label">AQI</text>
+                <text class="info-value">{{aqi}}</text>
+            </div>
+            <div class="info-item">
+                <text class="info-label">湿度</text>
+                <text class="info-value">{{humidity}}%</text>
+            </div>
+            <div class="info-item">
+                <text class="info-label">风力</text>
+                <text class="info-value">{{windLevel}}</text>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="container">
+    <text class="end">{{time}}</text>
+    <text class="end">{{end}}</text>
+</div>

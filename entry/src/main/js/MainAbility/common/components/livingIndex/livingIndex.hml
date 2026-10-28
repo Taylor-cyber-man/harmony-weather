@@ -1,0 +1,39 @@
+<div class="targetWeather">
+    <text class="title">{{title}}</text>
+    <div class="box">
+        <div class="gr">
+            <div>
+                <image src="../../img/live/sport.png"></image>
+                <text>运动</text>
+                <text>{{exercise}}</text>
+            </div>
+            <div>
+                <image src="../../img/live/clothes.png"></image>
+                <text>穿衣</text>
+                <text>{{dress}}</text>
+            </div>
+            <div>
+                <image src="../../img/live/light.png"></image>
+                <text>紫外线</text>
+                <text>{{sunshine}}</text>
+            </div>
+        </div>
+        <div class="gr">
+            <div>
+                <image src="../../img/live/cold.png"></image>
+                <text>感冒</text>
+                <text>{{cold}}</text>
+            </div>
+            <div>
+                <image src="../../img/live/car_wash.png"></image>
+                <text>洗车</text>
+                <text>{{carWashing}}</text>
+            </div>
+            <div>
+                <image src="../../img/live/sun-cure.png"></image>
+                <text>晾晒</text>
+                <text>{{sun_cure}}</text>
+            </div>
+        </div>
+    </div>
+</div>

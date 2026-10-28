@@ -1,0 +1,5 @@
+<!-- 容器元素，用于包含进度条 -->
+<div class="container">
+<!-- 自定义环形进度条，进度绑定timeout变量 -->
+    <progress class="min-progress" type="scale-ring" percent="{{ timeout }}"></progress>
+</div>

@@ -1,0 +1,14 @@
+{
+  "strings": {
+    "hello": "您好",
+    "world": "世界",
+    "select_city": "选择城市",
+    "search_city": "搜索城市",
+    "current_city": "当前城市",
+    "current": "当前",
+    "saved_cities": "已保存城市",
+    "hot_cities": "热门城市"
+  },
+  "Files": {
+  }
+}

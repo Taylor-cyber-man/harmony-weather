@@ -1,0 +1,18 @@
+/* 容器样式：背景布局与居中设置 */
+.container {
+    background-image: url("/common/img/other/bg1.gif");
+    background-size: 100% 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* 环形进度条样式 */
+.min-progress {
+    width: 200px;
+    height: 200px;
+    scale-width: 2px;
+    scale-number: 30;
+}

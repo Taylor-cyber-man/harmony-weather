@@ -1,0 +1,23 @@
+{
+  "data": {
+    "cityName": "深圳",
+    "temperature": "30",
+    "weatherText": "晴",
+    "tempHigh": "31",
+    "tempLow": "26",
+    "aqi": "50",
+    "humidity": "65",
+    "windLevel": "2级",
+    "updateTime": "12:00"
+  },
+  "actions": {
+    "routerEvent": {
+      "action": "router",
+      "abilityName": "com.example.myapplication.MainAbility",
+      "params": {
+        "message": "open weather app",
+        "from": "widget"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<div class="container-number">
+    <div class="temp">
+        <text class="title-number">{{title}}</text>
+        <text class="C">{{C}}</text>
+    </div>
+    <div class="weather">
+        <text>
+            {{weather}}
+        </text>
+    </div>
+
+    <div>
+        <button class="air" value="{{air}}"></button>
+    </div>
+</div>

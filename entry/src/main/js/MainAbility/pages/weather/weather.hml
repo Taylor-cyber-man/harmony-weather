@@ -1,0 +1,55 @@
+<element name="timeList" src="../../common/components/timeWeather/timeWeather.hml"></element>
+<element name="temperatureChart" src="../../common/components/temperatureChart/temperatureChart.hml"></element>
+<element name="title" src="../../common/components/title/title.hml"></element>
+<element name="briefWeatherInfo" src="../../common/components/briefWeatherInfo/briefWeatherInfo.hml"></element>
+<element name="weeklyWeather" src="../../common/components/weeklyWeather/weeklyWeather.hml"></element>
+<element name="qualityWeather" src="../../common/components/qualityWeather/qualityWeather.hml"></element>
+<element name="livingIndex" src="../../common/components/livingIndex/livingIndex.hml"></element>
+<element name="end" src="../../common/components/end/end.hml"></element>
+<element name="otherWeatherInfo" src="../../common/components/senseList/senseList.hml"></element>
+<element name="cloudRainInfo" src="../../common/components/rainCounter/rainCounter.hml"></element>
+<element name="wind-pointer" src="../../common/components/WindPointer/WindPointer.hml"></element>
+<div class="container">
+    <div>
+        <title path="{{path}}"></title>
+    </div>
+    <list class="indexList" scrollpage="true" cachedcount="10">
+        <list-item clickeffect="false" class="number">
+            <briefweatherinfo temp-data="{{tempData}}"></briefweatherinfo>
+        </list-item>
+
+        <list-item clickeffect="false" class="timeList">
+            <timelist time-data="{{timeData}}"></timelist>
+        </list-item>
+
+        <list-item clickeffect="false">
+            <temperaturechart time-data="{{timeData}}"></temperaturechart>
+        </list-item>
+
+        <list-item clickeffect="false">
+            <weeklyweather weekly-data="{{weeklyData}}"></weeklyweather>
+        </list-item>
+
+        <list-item clickeffect="false" style="padding: 10px 0;">
+            <div style="display: flex; width: 100%; padding: 0 5%; align-items: stretch;">
+                <div style="width: 45%; display: flex; flex-direction: column; margin-right: 10px;">
+                    <wind-pointer other-data="{{otherData}}" style="flex: 1;width: 95%; margin-bottom: 10px;"></wind-pointer>
+                    <cloudraininfo other-data="{{otherData}}" style="flex: 1; width: 95%;"></cloudraininfo>
+                </div>
+                <otherweatherinfo other-data="{{otherData}}" style="width: 55%;"></otherweatherinfo>
+            </div>
+        </list-item>
+
+        <list-item clickeffect="false">
+            <qualityweather aqi="{{airQuality}}"></qualityweather>
+        </list-item>
+        
+        <list-item clickeffect="false">
+            <livingindex suggest="{{suggestion}}"></livingindex>
+        </list-item>
+        
+        <list-item clickeffect="false">
+            <end new-time="{{time}}"></end>
+        </list-item>
+    </list>
+</div>

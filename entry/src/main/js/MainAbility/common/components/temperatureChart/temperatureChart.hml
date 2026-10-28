@@ -1,0 +1,4 @@
+<div class="chart-container">
+    <text class="chart-title">24小时温度趋势</text>
+    <canvas id="tempChart" class="temp-canvas"></canvas>
+</div>

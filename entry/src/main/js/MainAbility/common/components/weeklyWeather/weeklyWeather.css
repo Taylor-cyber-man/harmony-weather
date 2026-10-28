@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    height: 400px;
+    padding-left: 7px;
+    background-color: rgba(225,225,225,0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    margin: 0% 5% 5% 5%;
+}
+
+list{
+    flex-direction: row;
+}
+
+.item{
+    display: flex; /* 修复：添加 flex，确保内部元素垂直居中 */
+    flex-direction: column;
+    align-items: center; /* 图片和文字水平居中 */
+    width: 100%; /* 占满列表项宽度 */
+}
+
+.item>text{
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    line-height: 43px;
+}
+
+/* 核心优化：图片等比缩小 */
+.item>image{
+    width: 40px; /* 固定图片宽度（根据需求调整，如 35px/45px） */
+    height: 40px; /* 固定图片高度（与宽度一致，避免变形） */
+    object-fit: contain; /* 关键：等比缩放，完全显示在容器内，不拉伸 */
+/* 移除 fit-original-size: true（鸿蒙中用 object-fit 更可靠） */
+}
+
+list-item{
+    width: 20%;
+    display: flex; /* 确保列表项内部元素居中 */
+    justify-content: center;
+}

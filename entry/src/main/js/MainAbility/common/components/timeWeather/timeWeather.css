@@ -1,0 +1,43 @@
+.time-weather{
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(225,225,225,0.5);
+    margin: 2% 5% 0 5%;
+}
+
+.timeList list-item{
+    height: 40px;
+    color: #000;
+    text-align: center;
+    width: 20%;
+}
+
+list{
+    flex-direction: row;
+    height: 260px;
+}
+
+.item{
+    margin: 6% 5%;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.item text{
+    line-height: 55px;
+    width: 100%;
+    align-content: center;
+}
+
+.item image{
+    object-fit: contain;
+/*    margin-top: 20px;*/
+/*    position: relative;*/
+/*    z-index: 1;*/
+    height: 40px;
+    width:  100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}

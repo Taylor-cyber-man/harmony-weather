@@ -1,0 +1,15 @@
+<div class="container-rain">
+    <div class="barText">
+        <text class="text">{{title}}</text>
+    </div>
+    <div class="bar" if="{{isRain}}">
+        <stack class="data-region">
+            <chart class="chart-bar" type="bar" id="bar-chart" options="{{rainBarOps}}" datasets="{{rainBarData}}"></chart>
+        </stack>
+    </div>
+
+    <div class="else">
+        <image class="img" src="{{clouds}}"></image>
+        <text>{{otherData.clouds_count[0]}}%</text>
+    </div>
+</div>
